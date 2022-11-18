@@ -1,23 +1,17 @@
 // DATE PICKER
-
 $(function () {
     $("#inputCheckIn").datepicker();
     $("#inputCheckOut").datepicker();
-});
-
-// VIDEO CONTROL
-$(function () {
-    $("#inputCheckIn").datepicker();
-    $("#inputCheckOut").datepicker();
-
+    
+    // Slick Slider
     $('.level-slider').slick({
         dots: true,
         slidesToShow: 2,
         slidesToScroll: 1,
         arrows: false,
     });
-
-
+    
+    // VIDEO CONTROL
     function videoToggle() {
         video = $('.level-video').get(0)
         if (video.paused) {
